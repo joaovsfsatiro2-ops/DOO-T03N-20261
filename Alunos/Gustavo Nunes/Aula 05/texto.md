@@ -65,29 +65,29 @@ public class DobroNumero {
 
 
 
-&#x20;  public static void main(String\\\[] args) {
+            public static void main(String\\\[] args) {
 
 
 
-&#x20;      Scanner scan = new Scanner(System.in);
+            Scanner scan = new Scanner(System.in);
 
 
 
-&#x20;      System.out.println("Digite um número:");
+            System.out.println("Digite um número:");
 
-&#x20;      int numero = scan.nextInt();
-
-
-
-&#x20;      int resultado = numero \\\* 2;
+            int numero = scan.nextInt();
 
 
 
-&#x20;      System.out.println("O dobro é: " + resultado);
+            int resultado = numero \\\* 2;
 
 
 
-&#x20;  }
+            System.out.println("O dobro é: " + resultado);
+
+
+
+       }
 
 
 

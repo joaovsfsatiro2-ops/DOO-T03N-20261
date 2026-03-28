@@ -6,7 +6,7 @@
 
 
 
-Durante a aula foi apresentado que um paradigma de programação representa a forma como um problema é resolvido utilizando código. Ou seja, não é uma linguagem específica, mas sim um estilo de pensamento usado pelo programador para desenvolver uma solução. 
+Durante a aula foi apresentado que um paradigma de programação representa a forma como um problema é resolvido utilizando código. Ou seja, não é uma linguagem específica, mas sim um estilo de pensamento usado pelo programador para desenvolver uma solução.
 
 
 
@@ -53,6 +53,8 @@ Um exemplo de linguagem declarativa é o Prolog
 
 
 
+```java
+
 import java.util.Scanner;
 
 
@@ -85,6 +87,8 @@ public class DobroNumero {
 
 }
 
+```
+
 
 
 diz exatamente como o problema deve ser resolvido:
@@ -101,6 +105,8 @@ diz exatamente como o problema deve ser resolvido:
 #### **Código em Prolog (Paradigma Declarativo):**
 
 
+
+```prolog
 
 dobro(Numero, Resultado) :-
 
@@ -128,6 +134,8 @@ main :-
 
 &#x20;   write(Resultado), nl.
 
+```
+
 
 
 o foco está em definir a regra, e não em explicar passo a passo como o cálculo deve ser feito:
@@ -151,6 +159,4 @@ O paradigma imperativo trabalha com comandos e etapas bem definidas, sendo mais 
 
 
 Mesmo sendo diferentes, ambos são importantes, pois cada paradigma pode ser mais eficiente dependendo do tipo de problema que precisa ser resolvido.
-
-
 

@@ -25,16 +25,32 @@ public class Main {
         clientes = List.of(cliente1, cliente2, cliente3);
 
 
-        Loja loja1 = new Loja("Loja 1", "Razão Social 1", "12345678000100", endereco1, vendedores, clientes);
-        Loja loja2 = new Loja("Loja 2", "Razão Social 2", "22345678000100", endereco2, vendedores, clientes);
-        Loja loja3 = new Loja("Loja 3", "Razão Social 3", "32345678000100", endereco3, vendedores, clientes);
+        Loja loja1 = new Loja("Loja 1", "Razão Social 1", "12345678000100", endereco1, null, clientes);
+        Loja loja2 = new Loja("Loja 2", "Razão Social 2", "22345678000100", endereco2, null, clientes);
+        Loja loja3 = new Loja("Loja 3", "Razão Social 3", "32345678000100", endereco3, null, clientes);
         lojas = List.of(loja1, loja2, loja3);
 
-        Vendedor vendedor1 = new Vendedor("Ana", 30, loja1, endereco1, 2500.0);
-        Vendedor vendedor2 = new Vendedor("Bruno", 27, loja2, endereco2, 2600.0);
-        Vendedor vendedor3 = new Vendedor("Fernanda", 35, loja3, endereco3, 2700.0);
-        vendedores = List.of(vendedor1, vendedor2, vendedor3);
+        List<Vendedor> vendedores1 = new ArrayList<>();
+        List<Vendedor> vendedores2 = new ArrayList<>();
+        List<Vendedor> vendedores3 = new ArrayList<>();
+        loja1 .setVendedores(vendedores1);
+        loja2 .setVendedores(vendedores2);
+        loja3 .setVendedores(vendedores3);
 
+        List<Cliente> clientes1 = new ArrayList<>();
+        List<Cliente> clientes2 = new ArrayList<>();
+        List<Cliente> clientes3 = new ArrayList<>();
+        loja1.setClientes(clientes1);
+        loja2.setClientes(clientes2);   
+        loja3.setClientes(clientes3);
+
+        Vendedor vendedor1 = new Vendedor("Ana", 30, loja1, endereco1, 2500.0);
+        vendedores1.add(vendedor1);
+        Vendedor vendedor2 = new Vendedor("Bruno", 27, loja2, endereco2, 2600.0);
+        vendedores2.add(vendedor2);
+        Vendedor vendedor3 = new Vendedor("Fernanda", 35, loja3, endereco3, 2700.0);
+        vendedores3.add(vendedor3);
+        
         System.out.println("Bem vindo ao sistema de gerencia de negócio");
 
         int opcao;
